@@ -22,6 +22,13 @@ DEPENDS = " \
     tinycbor \
 "
 
+# Rust dependencies
+DEPENDS += " \
+    cargo-native \
+    rust-cross-${TARGET_ARCH} \
+    rust-native \
+"
+
 S = "${WORKDIR}/git"
 
 EXTRA_OECMAKE += " \
